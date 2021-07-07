@@ -8,7 +8,7 @@ gem 'json', '~> 1.7.7'
 group :development do
   gem 'coveralls', require: false
   gem 'rspec'
-  gem 'webmock'
+  gem 'webmock', '>= 1.11.0'
   gem 'guard'
   gem 'guard-rspec'
   gem 'vcr'
