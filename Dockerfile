@@ -1,6 +1,6 @@
 # gitlab-ci-runner
 
-FROM ubuntu:14.04
+FROM ubuntu:trusty-20190425
 MAINTAINER  Sytse Sijbrandij "sytse@gitlab.com"
 
 # This script will start a runner in a docker container.
