@@ -9,8 +9,8 @@ group :development do
   gem 'coveralls', require: false
   gem 'rspec'
   gem 'webmock'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'guard', '>= 1.8.1'
+  gem 'guard-rspec', '>= 3.0.2'
   gem 'vcr'
   gem 'pry'
   gem 'awesome_print'
