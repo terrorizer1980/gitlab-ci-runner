@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.3.4)
     awesome_print (1.2.0)
+    bigdecimal (3.3.1)
     charlock_holmes (0.6.9.4)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
@@ -15,6 +16,7 @@ GEM
       simplecov (>= 0.7)
       thor
     crack (0.3.2)
+    csv (3.3.5)
     diff-lcs (1.2.4)
     ffi (1.8.1)
     formatador (0.2.4)
@@ -27,8 +29,9 @@ GEM
     guard-rspec (3.0.1)
       guard (>= 1.8)
       rspec (~> 2.13)
-    httparty (0.11.0)
-      multi_json (~> 1.0)
+    httparty (0.24.0)
+      csv
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     json (1.7.7)
     listen (1.1.4)
@@ -38,8 +41,10 @@ GEM
     lumberjack (1.0.3)
     method_source (0.8.1)
     mime-types (1.23)
-    multi_json (1.7.4)
-    multi_xml (0.5.3)
+    mini_mime (1.1.5)
+    multi_json (1.19.1)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -80,9 +85,12 @@ DEPENDENCIES
   coveralls
   guard
   guard-rspec
-  httparty
+  httparty (>= 0.24.0)
   json (~> 1.7.7)
   pry
   rspec
   vcr
   webmock
+
+BUNDLED WITH
+   2.3.27
